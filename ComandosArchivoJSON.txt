@@ -2,7 +2,7 @@
 npm init -y
 
 //MODULOS
-npm i express express-handlebars mongoose morgan cors
+npm i express express-handlebars mongoose morgan cors dotenv
 
 //MODULOS BABEL
 npm i -D @babel/core @babel/node @babel/cli @babel/preset-env nodemon
