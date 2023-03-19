@@ -102,3 +102,12 @@ dist
 
 # TernJS port file
 .tern-port
+
+#Dependencias Node
+node_modules
+
+#Variables de entorno
+.env
+
+#Carpeta JavaScript Puro
+proyecto
