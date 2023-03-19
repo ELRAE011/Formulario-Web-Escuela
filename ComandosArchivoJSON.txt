@@ -1,6 +1,8 @@
 //ARCHIVO JSON
 npm init -y
+
 //MODULOS
 npm i express express-handlebars mongoose morgan cors
+
 //MODULOS BABEL
 npm i -D @babel/core @babel/node @babel/cli @babel/preset-env nodemon
