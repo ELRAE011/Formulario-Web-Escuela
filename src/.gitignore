@@ -1,0 +1,6 @@
+#Dependencias Node
+node_modules
+#Variables de entorno
+.env
+
+ComandosGit

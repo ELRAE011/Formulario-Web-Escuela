@@ -1,0 +1,38 @@
+<table class="table table-bordered table-hover table-dark">
+    <thead>
+        <tr>
+            <th>INDEX</th>
+            <th>NOMBRE</th>
+            <th>APELLIDO PATERNO</th>
+            <th>APELLIDO MATERNO</th>
+            <th>FECHA DE NACIMIENTO</th>
+            <th>SEXO</th>
+            <th>TELEFONO CELULAR</th>
+            <th>DIRECCION</th>
+            <th>ACCIONES</th>
+        </tr>
+    </thead>
+    <tbody>
+        {{#each alumnos}} 
+            <tr>
+                <td>{{@index}}</td>
+                <td>{{nombre}}</td>
+                <td>{{paterno}}</td>
+                <td>{{materno}}</td>
+                <td>{{fechaNac}}</td>
+                <td>{{sexo}}</td>
+                <td>{{celular}}</td>
+                <td>{{direccion}}</td>
+                <td>
+                    {{#if opcion }}
+                    <a href="/estatusAlumno/{{_id}}"class="btn btn-light">Dado de Alta</a>
+                    {{else}}
+                    <a href="/estatusAlumno/{{_id}}" class="btn btn-info">Dado de Baja</a>
+                    {{/if}}
+                    <a  href="/editarAlumno/{{_id}}" class="btn btn-success">Actualizar</a>
+                    <a  href="/borrarAlumno/{{_id}}" class="btn btn-danger">Eliminar</a>    
+                </td>
+            </tr>
+        {{/each}}
+    </tbody>
+</table>

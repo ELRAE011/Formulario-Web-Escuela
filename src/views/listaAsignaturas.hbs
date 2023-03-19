@@ -1,0 +1,31 @@
+<table class="table table-bordered table-hover table-dark">
+    <thead>
+        <tr>
+            <th>INDEX</th>
+            <th>ASIGNATURA</th>
+            <th>CREDITOS</th>
+            <th>HORAS</th>
+            <th>ACCIONES</th>
+        </tr>
+    </thead>
+    <tbody>
+        {{#each asignaturas}} 
+            <tr>
+                <td>{{@index}}</td>
+                <td>{{asignatura}}</td>
+                <td>{{creditos}}</td>
+                <td>{{horas}}</td>
+                <td>
+                    {{#if opcion }}
+                    <a href="/estatusAsignatura/{{_id}}"class="btn btn-light">Con lugares disponibles</a>
+                    {{else}}
+                    <a href="/estatusAsignatura/{{_id}}" class="btn btn-info">No hay lugares disponibles</a>
+                    {{/if}}
+
+                    <a  href="/editarAsignatura/{{_id}}" class="btn btn-success">Actualizar</a>
+                    <a  href="/borrarAsignatura/{{_id}}" class="btn btn-danger">Eliminar</a>   
+                 </td>
+            </tr>
+        {{/each}}
+    </tbody>
+</table>

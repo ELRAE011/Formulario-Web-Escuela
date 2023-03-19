@@ -1,0 +1,25 @@
+<div class="card card-body p-4 rounded-0 bg-dark text-white">
+    <H3>AGREGAR ASIGNATURA</H3>
+
+    <form action="/Asignatura/Agregar" method="POST">
+
+    <div><label for="asigTit">Asignatura</label></div>
+        <div>
+            <label for="asignatura">Escribe el nombre :</label>
+            <input type="text" name="asignatura" placeholder="Asignatura" id="asignatura" class="form-control bg-dark text-white" />
+        </div>
+
+        <div>
+            <label for="creditos">Escriba los creditos :</label>
+            <input type="number" name="creditos" placeholder="Creditos de la Asignatura" id="creditos" class="form-control bg-dark text-white"/>
+        </div>
+
+        <div>
+            <label for="horas">Escriba las horas </label>
+            <input type="number" name="horas" placeholder="Horas de la Asignatura" id="horas" class="form-control bg-dark text-white"/>
+        </div>
+
+    <button class="btn btn-success btn-sm mt-2">Agregar</button>
+
+    </form>
+</div>

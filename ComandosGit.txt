@@ -1,0 +1,10 @@
+git init
+git status
+git add .
+git status
+git branch -m "Escuela1"
+git commit -m "Subiendo el Proyecto"
+git log
+git branch
+git push origin "master" //Nombre del branch
+git check out //Cambiar de Branch

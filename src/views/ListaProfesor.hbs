@@ -1,0 +1,42 @@
+<table class="table table-bordered table-hover table-dark">
+    <thead>
+        <tr>
+            <th>INDEX</th>
+            <th>RFC</th>
+            <th>NOMBRES</th>
+            <th>APELLIDO PATERNO</th>
+            <th>APELLIDO MATERNO</th>
+            <th>FECHA DE NACIMIENTO</th>
+            <th>DIRECCION</th>
+            <th>TELEFONO CELULAR</th>
+            <th>PROFESION</th>
+            <th>NUMERO DE EMPLEADO</th>
+            <th>ACCIONES</th>
+        </tr>
+    </thead>
+    <tbody>
+        {{#each profesor}} 
+            <tr>
+                <td>{{@index}}</td>
+                <td>{{rfc}}</td>
+                <td>{{nombres}}</td>
+                <td>{{paterno}}</td>
+                <td>{{materno}}</td>
+                <td>{{fechaNacimiento}}</td>
+                <td>{{direccion}}</td>
+                <td>{{celular}}</td>
+                <td>{{profesion}}</td>
+                <td>{{numeroEmpleado}}</td>
+                <td>
+                    {{#if opcion }}
+                    <a href="/estatusProfesor/{{_id}}"class="btn btn-light">Clases Inscritas</a>
+                    {{else}}
+                    <a href="/estatusProfesor/{{_id}}" class="btn btn-info">Clases No Inscritas</a>
+                    {{/if}}
+                    <a  href="/editarProfesor/{{_id}}" class="btn btn-success">Actualizar</a>
+                    <a  href="/borrarProfesor/{{_id}}" class="btn btn-danger">Eliminar</a> 
+                 </td>
+            </tr>
+        {{/each}}
+    </tbody>
+</table>

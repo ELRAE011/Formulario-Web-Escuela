@@ -1,0 +1,48 @@
+<form action="/editarProfesor/{{profesor._id}}", method="POST">
+    <div>
+        <label for="rfc">Nuevo RFC :</label>
+        <input type="text" name="rfc" placeholder="RFC"
+            value="{{profesor.rfc}}">
+    </div>
+    <div>
+        <label for="nombres">Nuevos nombres :</label>
+        <input type="text" name="nombres" placeholder="NOMBRES"
+            value="{{profesor.nombres}}">
+    </div>
+    <div>
+        <label for="paterno">NUEVO APELLIDO PATERNO:</label>
+        <input type="text" name="paterno" placeholder="APELLIDO PATERNO"
+        value="{{profesor.paterno}}">
+    </div>
+        <div>
+        <label for="materno">NUEVO APELLIDO MATERNO:</label>
+        <input type="text" name="materno" placeholder="APELLIDO MATERNO"
+        value="{{profesor.materno}}">
+    </div>
+    <div>
+        <label for="fechaNacimiento">ACTUALUICE SU FECHA DE NACIMIENTO:</label>
+        <input type="date" name="fechaNacimiento" 
+        value="{{profesor.fechaNacimiento}}">
+    </div>
+    <div>
+        <label for="direccion">INGRESE SU NUEVA DIRECCION:</label>
+        <input type="text" name="direccion" placeholder="Calle ## Mz ## Lt ##" id="direccion"
+        value="{{profesor.direccion}}">
+    </div>
+    <div>
+        <label for="celular">NUEVO CELULAR:</label>
+        <input type="number" name="celular" placeholder="5511223344" id="celular"
+        value="{{profesor.celular}}">
+    </div>
+        <div>
+        <label for="profesion">INGRESE SU NUEVA DIRECCION:</label>
+        <input type="text" name="profesion" placeholder="PROFESION" id="direccion"
+        value="{{profesor.profesion}}">
+    </div>
+        <div>
+        <label for="numeroEmpleado">NUEVO NUMERO DE EMPLEADO:</label>
+        <input type="number" name="numeroEmpleado" placeholder="0011" id="numeroEmpleado"
+        value="{{profesor.numeroEmpleado}}">
+    </div>
+    <button>Actualizar</button>
+</form>

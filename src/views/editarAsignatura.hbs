@@ -1,0 +1,21 @@
+<div class="card card-body p-4 rounded-0 bg-dark text-white">
+    <h4>Editar Informacion de la Asignatura</h4>
+<form action="/editarAsignatura/{{asignatura._id}}", method="POST">
+    <div>
+        <label for="asignatura">Nueva Asignatura:</label>
+        <input type="text" name="asignatura" placeholder="BASE DE DATOS II"class="form-control bg-dark text-white"
+        value="{{asignatura.asignatura}}">
+    </div>
+    <div>
+        <label for="creditos">Modifica el valor de los creditos:</label>
+        <input type="number" name="creditos" placeholder="7"class="form-control bg-dark text-white"
+        value="{{asignatura.creditos}}">
+    </div>
+    <div>
+        <label for="horas">Modifica las horas de la Asignatura:</label>
+        <input type="number" name="horas" placeholder="4:00" class="form-control bg-dark text-white"
+        value="{{asignatura.horas}}">
+    </div>
+    <button class="btn btn-success btn-sm mt-2">Agregar</button>
+</form>
+</div>
